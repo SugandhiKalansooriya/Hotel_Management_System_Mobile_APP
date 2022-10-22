@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img1"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:background="#A112E3" />
+
+    <TextView
+        android:id="@+id/text_context"
+        android:layout_width="388dp"
+        android:layout_height="232dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="184dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/text_context"
+        android:textColor="@color/black"
+        android:textColorHint="#D3D0D0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="277dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/btn1"
+        android:textSize="24sp"
+        app:backgroundTint="#A112E3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_context" />
+
+    <ImageView
+        android:id="@+id/lunchimag4"
+        android:layout_width="468dp"
+        android:layout_height="202dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:srcCompat="@drawable/page1_img" />
+
+    <TextView
+        android:id="@+id/Topic"
+        android:layout_width="349dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/Topic"
+        android:textColor="#7D219E"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchimag4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

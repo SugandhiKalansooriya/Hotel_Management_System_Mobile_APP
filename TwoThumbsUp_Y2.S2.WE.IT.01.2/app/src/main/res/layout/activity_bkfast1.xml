@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img1">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:background="#A112E3" />
+
+    <ImageView
+        android:id="@+id/lunchimag4"
+        android:layout_width="227dp"
+        android:layout_height="258dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:srcCompat="@drawable/redriceandcurry" />
+
+    <TextView
+        android:id="@+id/noodles_topic"
+        android:layout_width="323dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/redrice_topic"
+        android:textColor="#9F2AB3"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchimag4" />
+
+    <TextView
+        android:id="@+id/noodless_text"
+        android:layout_width="384dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/redrice_text"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noodles_topic" />
+
+    <TextView
+        android:id="@+id/noodles_price"
+        android:layout_width="96dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/redrice_price"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pricetex"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pricetex"
+        android:layout_width="268dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/pricetex"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noodless_text" />
+
+    <EditText
+        android:id="@+id/Noofplates"
+        android:layout_width="330dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="112dp"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="@string/Noofplates"
+        android:inputType="number"
+        android:textColor="#610E83"
+        android:textColorHint="#5D2485"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="94dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/back_btn"
+        android:textSize="14sp"
+        app:backgroundTint="#A112E3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Noofplates"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <Button
+        android:id="@+id/oder_btn"
+        android:layout_width="129dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/oder_btn"
+        app:backgroundTint="#A112E3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Noofplates"
+        app:layout_constraintVertical_bias="0.909" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

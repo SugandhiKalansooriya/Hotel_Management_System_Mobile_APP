@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/img1">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:background="#A112E3" />
+
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="288dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/customer_input"
+
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="@string/et_date"
+        android:inputType="date"
+        android:textColor="@color/black"
+        android:textColorHint="#5F066E"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="288dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/customer_input"
+
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="@string/et_email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="#6A047C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_date"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/btn_style"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/confirm_btn"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:backgroundTint="#A112E3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/view_btn"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="291dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/btn_style"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/view_btn"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:backgroundTint="#A112E3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/Update_btn"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/btn_style"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/Update_btn"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:backgroundTint="#A112E3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/Delete_btn"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/btn_style"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/Delete_btn"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:backgroundTint="#A112E3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/back_btn"
+        app:backgroundTint="#A112E3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/clear_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_style"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/clear_btn"
+        app:backgroundTint="#A112E3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFriedRice"
+        android:layout_width="184dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/txtFriedRice"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_btn" />
+
+    <TextView
+        android:id="@+id/txtBiriyani"
+        android:layout_width="184dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtBiriyani"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFriedRice" />
+
+    <TextView
+        android:id="@+id/txtNasigorang"
+        android:layout_width="184dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Nasigoran_topic"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBiriyani" />
+
+    <TextView
+        android:id="@+id/txtRedrice"
+        android:layout_width="184dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/txtRedrice"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNasigorang" />
+
+    <TextView
+        android:id="@+id/txtStringhoppers"
+        android:layout_width="184dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/txtStringhoppers"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRedrice" />
+
+    <TextView
+        android:id="@+id/txtKotthu"
+        android:layout_width="184dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtKotthu"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStringhoppers" />
+
+    <TextView
+        android:id="@+id/txtNoodles"
+        android:layout_width="184dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtNoodles"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtKotthu" />
+
+    <EditText
+        android:id="@+id/noFriedrice"
+        android:layout_width="52dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtFriedRice"
+        app:layout_constraintStart_toEndOf="@+id/txtFriedRice"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/Nobiriyani"
+        android:layout_width="51dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtBiriyani"
+        app:layout_constraintStart_toEndOf="@+id/txtBiriyani"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/noNasigorang"
+        android:layout_width="52dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtNasigorang"
+        app:layout_constraintStart_toEndOf="@+id/txtNasigorang"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/noRedRice"
+        android:layout_width="53dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtRedrice"
+        app:layout_constraintStart_toEndOf="@+id/txtRedrice"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/NoStringhop"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtStringhoppers"
+        app:layout_constraintStart_toEndOf="@+id/txtStringhoppers"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/noKotthu"
+        android:layout_width="51dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtKotthu"
+        app:layout_constraintStart_toEndOf="@+id/txtKotthu"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/NoNoodless"
+        android:layout_width="52dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtNoodles"
+        app:layout_constraintStart_toEndOf="@+id/txtNoodles"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_bill"
+        android:layout_width="69dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#151515"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NoNoodless" />
+
+    <TextView
+        android:id="@+id/billLable"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/billLable"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNoodles" />
+
+    <TextView
+        android:id="@+id/rupeeLable"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/rupeeLable"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/billLable"
+        app:layout_constraintTop_toBottomOf="@+id/txtNoodles" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="84dp"
+        android:clickable="true"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintStart_toEndOf="@+id/et_date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_date_range_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

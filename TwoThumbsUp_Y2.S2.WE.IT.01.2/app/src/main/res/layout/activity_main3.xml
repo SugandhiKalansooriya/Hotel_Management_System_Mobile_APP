@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+
+    android:background="@drawable/homebackground">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        android:background="#A112E3" />
+
+    <TextView
+        android:id="@+id/homeTopic"
+        android:layout_width="372dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/homeTopic"
+        android:textColor="@color/black"
+        android:textSize="96sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <Button
+        android:id="@+id/btn_foods"
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#A112E3"
+        android:fontFamily="@font/aclonica"
+        android:text="Oder foods"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeTopic" />
+
+    <Button
+        android:id="@+id/btn_catering"
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#A112E3"
+        android:fontFamily="@font/aclonica"
+        android:text=" Catering Service"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btn_foods"
+        app:layout_constraintTop_toBottomOf="@+id/homeTopic" />
+
+    <Button
+        android:id="@+id/btn_event"
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#A112E3"
+        android:fontFamily="@font/aclonica"
+        android:text="Event Boking"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_foods" />
+
+    <Button
+        android:id="@+id/btn_room"
+        android:layout_width="146dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#A112E3"
+        android:fontFamily="@font/aclonica"
+        android:text="Room Boking"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btn_event"
+        app:layout_constraintTop_toBottomOf="@+id/btn_catering" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
